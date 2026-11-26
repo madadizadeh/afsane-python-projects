@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+x=[-4,-3,-2,-1,0 ,1 ,2 ,3 ,4]
+Y=[]
+def y(xi):
+    return xi**2
+for xi in x:
+    Y.append(y(xi))
+plt.plot(x,Y)
+plt.grid()
+plt.axhline(0)
+plt.axvline(0)
+plt.show()
