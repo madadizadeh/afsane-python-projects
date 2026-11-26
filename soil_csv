@@ -1,0 +1,22 @@
+soil_csv=open("soil.txt","w")
+soil_csv.write("gama, phi,c\n 18,30,10\n20,32,12\n19,28,5\n22,35,15")
+soil_csv.close()
+import matplotlib.pyplot as plt
+soil_csv=open("soil.txt","r")
+next(soil_csv)
+gamas=[]
+phi1=[]
+c1=[]
+for line in soil_csv:
+    re=line.split(",")
+    gama=float(re[0])
+    phi=float(re[1])
+    c=float(re[2])
+    gamas.append(gama)
+    phi1.append(phi)
+    c1.append(c)
+plt.plot(gamas,label="gama")
+plt.plot(phi1, label="phi1")
+plt.plot(c1,label="c1")
+plt.legend()
+plt.show()
