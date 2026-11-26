@@ -1,0 +1,6 @@
+gama=[28,19,24,41,37,29]
+valid_gama=[]
+for g in gama:
+    if g>=24:
+        valid_gama.append(g)
+print(valid_gama)
