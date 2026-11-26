@@ -1,0 +1,17 @@
+a=int(input("number1"))
+b=int(input("number2"))
+c=input("operator")
+def calculator(a,b):
+    if c=="+":
+        print(a+b)
+    elif c== "-":
+        print(a-b)
+    elif c== "*":
+        print(a*b)
+    elif c== "/":
+        if b==0:
+            print("b cannt be 0")
+        else:
+            print(a/b)
+
+calculator(a,b)
