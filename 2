@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+x=[0,1,2,3,4]
+X=[]
+Y=[]
+def y1(x):
+    return x**2
+def y2(x):
+    return 2*x+1
+for xi in x:
+    X.append(y1(xi))
+    Y.append(y2(xi))
+plt.plot(x,X, label="x**2")
+plt.plot(x,Y , label="2*x+1") 
+plt.xlabel("x")
+plt.ylabel("y")
+plt.legend()
+plt.show() 
