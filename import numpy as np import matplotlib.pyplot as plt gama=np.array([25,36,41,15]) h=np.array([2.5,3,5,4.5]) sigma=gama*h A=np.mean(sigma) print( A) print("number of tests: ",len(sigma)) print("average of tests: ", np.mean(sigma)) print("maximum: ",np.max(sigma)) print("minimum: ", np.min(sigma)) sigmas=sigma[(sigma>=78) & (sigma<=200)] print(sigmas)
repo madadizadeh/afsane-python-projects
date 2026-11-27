@@ -1,0 +1,13 @@
+import numpy as np
+import matplotlib.pyplot as plt
+gama=np.array([25,36,41,15])
+h=np.array([2.5,3,5,4.5])
+sigma=gama*h
+A=np.mean(sigma)
+print( A)
+print("number of tests: ",len(sigma))
+print("average of tests: ", np.mean(sigma))
+print("maximum: ",np.max(sigma))
+print("minimum: ", np.min(sigma))
+sigmas=sigma[(sigma>=78) & (sigma<=200)]
+print(sigmas)
