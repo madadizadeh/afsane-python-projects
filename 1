@@ -1,0 +1,11 @@
+import numpy as np
+import matplotlib.pyplot as plt
+gama=np.array([25,36,41,15])
+h=np.array([2.5,3,5,4.5])
+sigma=gama*h
+print(sigma)
+plt.plot(gama, label="gama")
+plt.plot(h, label="h")
+plt.plot(sigma, label="sigma")
+plt.legend()
+plt.show()
